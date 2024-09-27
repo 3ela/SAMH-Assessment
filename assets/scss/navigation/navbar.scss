@@ -1,0 +1,47 @@
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+
+  .logo {
+    width: 25%;
+  }
+
+  .links {
+    text-align: center;
+    width: 50%;
+  }
+
+  .right-side {
+    display: flex;
+    justify-content: end;
+    width: 25%;
+  }
+
+  .language-switch {
+    margin: 0 10px;
+    padding: 0 10px;
+
+    button {
+      @extend .montserrat;
+
+      border: 0;
+      background-color: transparent;
+      cursor: pointer;
+
+      &:hover {
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      }
+    }
+  }
+
+  .login-btn {
+    margin: 0 10px;
+    padding: 0 10px;
+    border: 0;
+    background-color: $primary;
+    cursor: pointer;
+    color: white;
+    border-radius: 4px;
+  }
+}
