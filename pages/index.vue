@@ -2,11 +2,12 @@
   <h6
     
   >
-    Discover Our Paradise Worlds,
-    Travel Anywhere Now!
+    {{ $t('hero.title') }}
   </h6>
 
   <FormsBookForm />
+
+  <HomeBlogCards />
 </template>
 
 <script setup>

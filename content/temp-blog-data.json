@@ -1,0 +1,21 @@
+
+{
+  "blog_1": {
+    "title": "Flores Road Trip 3D2N",
+    "location": "Manggarai Barat",
+    "duration": "3 Days",
+    "price": "375"
+  },
+  "blog_2": {
+    "title": "Paket Tiket Pesawat Jakarta Bali",
+    "location": "Jakarta",
+    "duration": "1 Days",
+    "price": "375"
+  },
+  "blog_3": {
+    "title": "Forrester Glamping Co Bogor",
+    "location": "Bogor",
+    "duration": "3 Days",
+    "price": "375"
+  }
+}

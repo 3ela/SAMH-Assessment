@@ -1,9 +1,12 @@
 <template>
 
-  <form @submit.prevent="submit">
+  <form 
+    @submit.prevent="formSubmit" v-if="!isLoading"
+    :id="props.formOpts.formId || 'form'"  
+  >
     <div>
       <div 
-        v-for="(field, fieldInd) in fields"
+        v-for="(field, fieldInd) in props.formOpts.fields"
         :key="fieldInd"
         :class="field.class"
       >
@@ -56,6 +59,22 @@
 
       </div>
     </div>    
+
+    <div
+      class="form-btns"
+    >
+      <button
+        v-if="props.formOpts.submitBtn"
+        type="submit"
+      >
+        {{ $t(props.formOpts.submitBtn.text) || $t('Submit') }}
+        <Icon
+          v-if="props.formOpts.submitBtn.icon"
+          :src="props.formOpts.submitBtn.icon"
+          :size="20"
+        ></Icon>
+      </button>
+    </div>
   </form>
 </template>
 
@@ -64,10 +83,31 @@ import flatPickr from 'vue-flatpickr-component';
 import vSelect from 'vue-select';
 import 'flatpickr/dist/flatpickr.css';
 import 'vue-select/dist/vue-select.css';
+import SearchIcon from '~/assets/images/search.png';
 
 const formData = ref({});
-const props = defineProps(['fields']);
+const isLoading = ref(false);
+const props = defineProps(['formOpts']);
 
-defineEmits(['submit']);
+const emit = defineEmits(['submit']);
+
+function formSubmit() {
+  //* insure form validity if the form wasn't submitted normally
+  //! used only when watched form is applied
+  // let formEle = document.getElementById('form');
+  // let isValid = formEle.reportValidity();
+  // if(!isValid) {
+  //   return false;
+  // }
+
+  //* check for parent submit function 
+  if(props.formOpts.submitBtn && props.formOpts.submitBtn.fn) {
+    //* if so run prent function 
+    props.formOpts.submitBtn.fn(formData.value);
+  } else {
+    //* else emit submit event 
+    emit('submit', formData.value);
+  }
+}
 
 </script>
