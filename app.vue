@@ -23,7 +23,7 @@ function checkLocale() {
   }
 }
 
-// checkLocale();
+checkLocale();
 </script>
 
 <style lang="scss">

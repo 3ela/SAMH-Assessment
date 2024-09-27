@@ -44,17 +44,17 @@ function openDropdown() {
 function switchLanguage(lang) {
   setLocale(lang.code);
   if(lang.code == 'ar') {
-    // useHead({
-    //   bodyAttrs: {
-    //     direction: 'rtl'
-    //   }
-    // })
+    useHead({
+      bodyAttrs: {
+        direction: 'rtl'
+      }
+    })
   } else {
-    // useHead({
-    //   bodyAttrs: {
-    //     direction: 'ltr'
-    //   }
-    // })
+    useHead({
+      bodyAttrs: {
+        direction: 'ltr'
+      }
+    })
   }
 }
 

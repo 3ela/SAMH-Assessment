@@ -38,7 +38,7 @@
 <script setup>
 
 const links = [
-  { text: "Home", route: 'Home' },
+  { text: "Home", route: '/' },
   { text: "Promo", route: 'promo' },
   { text: "My Booking", route: 'booking' },
 ]

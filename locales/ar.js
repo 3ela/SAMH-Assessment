@@ -1,5 +1,5 @@
 
 
 export default {
-  "Sign In": "shit"
+  "Sign In": "Sign In"
 }
