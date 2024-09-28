@@ -1,7 +1,7 @@
 # SAMH Assessment
 
 This project was made by Nuxt 3. 
-==Refer to the documentation floder for more details.== 
+*Please Refer to the documentation floder for more details.*
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
 ## Setup
