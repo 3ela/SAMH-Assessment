@@ -1,8 +1,9 @@
 # SAMH Assessment
 
 This project was made by Nuxt 3. 
-*Please Refer to the documentation floder for more details.*
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+
+**Please Refer to the documentation folder for more details.**
 
 ## Setup
 
