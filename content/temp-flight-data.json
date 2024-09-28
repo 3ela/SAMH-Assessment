@@ -1,0 +1,46 @@
+
+{
+  "1": {
+    "title": "Cairo To Riyadh",
+    "class": "eco",
+    "type": "round"
+    
+  },
+  "2": {
+    "title": "Sharm EL Shiek To Riyadh",
+    "class": "eco",
+    "type": "oneWay"
+    
+  },
+  "3": {
+    "title": "Tarablos To Riyadh",
+    "class": "first",
+    "type": "oneWay"
+    
+  },
+  "4": {
+    "title": "Tunis To Riyadh",
+    "class": "business",
+    "type": "oneway"
+    
+  },
+  "5": {
+    "title": "El Khartom To Riyadh",
+    "class": "business",
+    "type": "round"
+    
+  },
+  "6": {
+    "title": "Algiers To Riyadh",
+    "class": "business",
+    "type": "round"
+    
+  },
+  "7": {
+    "title": "Marakesh To Riyadh",
+    "class": "first",
+    "type": "round"
+    
+  }
+  
+}

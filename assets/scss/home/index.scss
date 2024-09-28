@@ -1,0 +1,92 @@
+
+.hero {
+  background: url('assets/images/world_map.png');
+  background-repeat: no-repeat;
+  
+  h1 {
+    padding: 4% 15%;
+    font-size: 5rem;
+    text-align: center;
+    background: -webkit-linear-gradient(0deg, rgba(24,56,103,1) 38%, rgba(234,161,33,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  @media (max-width: 780px) { 
+    h1 {
+      padding: 4% 2%;
+      font-size: 2rem;
+    }
+  }
+}
+
+.blog {
+  padding: 2%;
+
+  h6 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: $secondary;
+  }
+  p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: $secondary;
+  }
+
+  .blog-cards {
+    display: flex;
+    justify-content:  space-between;
+    .blog-card {
+      border: white 1px solid;
+      border-radius: 8px;
+      padding: 20px;
+      background-color: #F0F0F073;
+      cursor: pointer;
+      .img {
+        img {
+          border-start-start-radius: 8px;
+          border-end-end-radius: 8px;
+          object-fit: cover;
+        }
+      }
+
+      .location {
+        display: flex;
+        align-items: center;
+        color: #8F8F8F;
+        font-size: .8rem;
+      }
+
+      h6 {
+        color: $secondary;
+        font-size: 1.1rem;
+        margin: 10px 0;
+      }
+      .duration {
+        font-size: 1rem;
+        color: #636363;
+      }
+      .price {
+        font-size: 1rem;
+        color: $primary;
+      }
+    }
+  }
+  @media (max-width: 780px) { 
+    h6 {
+      font-size: 2rem;
+      margin-top: 50px;
+    }
+
+    .blog-card {
+      margin: 0 auto;
+      .img {
+        img {
+          width: 260px;
+          height: 160px;
+        }
+
+      }
+    }
+  }
+}

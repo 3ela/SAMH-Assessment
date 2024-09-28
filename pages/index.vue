@@ -1,13 +1,13 @@
 <template>
-  <h6
-    
-  >
-    {{ $t('hero.title') }}
-  </h6>
+  <section class="hero">
+    <h1>
+      {{ $t('hero.title') }}
+    </h1>
 
-  <FormsBookForm />
+    <FormsBookForm />
 
-  <HomeBlogCards />
+    <HomeBlogCards />
+  </section>
 </template>
 
 <script setup>

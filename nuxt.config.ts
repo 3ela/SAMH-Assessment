@@ -13,7 +13,7 @@ export default defineNuxtConfig({
       { code: 'en', iso: 'en-us', name: "English", file: 'en', dir: 'ltr' },
     ],
     defaultLocale: 'ar',
-    strategy: 'prefix_and_default',
+    strategy: 'no_prefix',
     langDir: 'locales/'
   }
 })

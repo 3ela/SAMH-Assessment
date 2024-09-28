@@ -7,24 +7,26 @@
         src="../../assets/images/logo.png"
         width="180"
         height="40"
+         @click="$router.push('/')"
       />
     </div>
-
+    
     <!-- navabr links -->
-     <div class="links">
+    <div class="links" v-if="largeScreens">
       <NuxtLink 
         v-for="link in links"
         :to="link.route"
+        class="link"
       > 
         {{ link.text }}
       </NuxtLink>
-     </div>
+    </div>
 
     <!-- language switch / profile and auth  -->
     <div class="right-side">
       <NavigationLanguageSwitch />
 
-      <div>
+      <div v-if="largeScreens">
         <button class="login-btn">
           {{ $t('Sign In') }}
         </button>
@@ -36,11 +38,11 @@
 </template>
 
 <script setup>
-
+const largeScreens = useLargeScreens();
 const links = [
   { text: "Home", route: '/' },
-  { text: "Promo", route: 'promo' },
-  { text: "My Booking", route: 'booking' },
+  { text: "Blog", route: '/blog' },
+  // { text: "My Booking", route: 'booking' },
 ]
 
 </script>

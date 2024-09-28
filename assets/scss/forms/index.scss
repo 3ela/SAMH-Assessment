@@ -1,0 +1,122 @@
+
+
+.form-row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+
+  .col {
+    width: auto;
+    display: inline-block;
+
+    
+    .input-holder {
+      padding: 5px 10px;
+    }
+    label {
+      display: flex;
+      margin-bottom: 10px;
+      align-items: center;
+      span {
+        margin: 0 5px
+      }
+    }
+  }
+  .col-12 {
+    @extend .col;
+    width: 100%;
+  }
+  .col-6 {
+    @extend .col;
+    width: 50%;
+  }
+  .col-4 {
+    @extend .col;
+    width: 33%;
+  }
+  .col-3 {
+    @extend .col;
+    width: 25%;
+  }
+  .col-2 {
+    @extend .col;
+    width: 20%;
+  }
+
+  .form-input {
+    height: 25px;
+    width: 98.5%;
+    margin: 0px;  
+    border: 0;
+    font-size: .9rem;
+    border-bottom: 1px solid rgba(gray, .4);
+    transition: all 20ms ease-in;
+
+    &:focus {
+      border-bottom: 2px solid $primary;
+      outline: none;
+    }
+
+  }
+  .form-date {
+    @extend .form-input;
+    
+  }
+  .form-radio {
+    @extend .form-input;
+    border: 0;
+    // display: flex;
+    // align-items: center;
+    &-opt {
+      display: flex;
+      align-items: center;
+      margin-top: 5px;
+
+      label {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .form-select {
+    
+    .vs__search {
+      font-size: .9rem;
+      
+    }
+    .vs__dropdown-toggle {
+      height: 28px;
+      border: 0;
+      border-bottom: 1px solid rgba(gray, .4) !important;
+    }
+
+  }
+  @media (max-width: 780px) { 
+
+    .col {
+      width: 100% !important;
+    }
+    .form-input {
+      margin-bottom: 10px;
+    }
+    .form-radio {
+      height: auto;
+    }
+  }
+}
+.form-btns {
+  padding: 5px 10px;
+  margin-top: 10px;
+
+  button {
+    border: 0;
+    background-color: $primary;
+    border-radius: 4px;
+    padding: 4px 20px;
+    cursor: pointer;
+
+    @media (max-width: 780px) { 
+      width: 100%;
+      background-color: $secondary;
+    }
+  }
+}

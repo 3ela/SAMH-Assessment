@@ -10,10 +10,14 @@ $secondary: #183867;
 @import './navigation/footer.scss',
         './navigation/navbar.scss';
 
-@import './forms/index.scss';
+@import './forms/index.scss',
+        './forms/book-form.scss';
 
-
-
+body {
+  background-color: #f0f0f7;
+  margin: 0;
+  padding: 0 1%;
+}
 .montserrat {
   font-family: "Montserrat", sans-serif;
 }

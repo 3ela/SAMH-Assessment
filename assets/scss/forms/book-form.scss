@@ -1,0 +1,16 @@
+
+
+.book-form {
+  background-color: white;
+  border: rgba(gray, .5) 1px solid;
+  border-start-start-radius: 12px;
+  border-start-end-radius: 12px;
+  padding: 25px;
+  margin: 20px;
+  @media (max-width: 780px) { 
+    border-radius: 12px;
+    margin: 2%;
+    margin-bottom: 0;
+    padding: 12px;
+  }
+}
